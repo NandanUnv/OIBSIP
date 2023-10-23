@@ -67,7 +67,6 @@ while condition:
     # where key refers to person no./id and values refers to BMI of them respectively
     elif button == 'History':
         sg.popup("BMi's of your people are:", db)
-        
 
     # if ' is chosen the GUI will be closed and code will terminated
     else:
