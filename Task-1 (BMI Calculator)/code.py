@@ -5,6 +5,9 @@
 
 import PySimpleGUIQt as sg
 
+db = {}
+count = 1
+
 sg.theme('BlueMono')
 
 condition = True
@@ -37,7 +40,7 @@ while condition:
     myl = [[sg.Text("                 ! Find your BMI !            ")],
            [sg.Text("height in meters:", size=(20, 1)), sg.InputText()],
            [sg.Text("weight in kgs:", size=(20, 1)), sg.InputText()],
-           [sg.OK(), sg.Cancel(), sg.Button('Next')]
+           [sg.OK(), sg.Button('Next'),sg.Button('History')]
            ]
 
     button, values = form.Layout(myl).Read()
@@ -46,16 +49,27 @@ while condition:
     if button == 'OK':
         res = float(values[1]) / (float(values[0])) ** 2
         BMI = round(res, 1)
+        db[count]=BMI
+        count+=1
         st_BMI(BMI)
+        sg.popup("BMi's of your people are:", db)
         break
 
     # If 'Next' is chosen the popup gives you BMI value and allow to enter other person's data
     elif button=='Next':
         res = float(values[1]) / (float(values[0])) ** 2
         BMI = round(res, 1)
+        db[count]=BMI
+        count+=1
         st_BMI(BMI)
 
-    # if 'Cancel' is chosen the GUI will be closed and code will terminated
+    # if 'History' is chosen the GUI will provide BMI of every person you entered in dictionary format
+    # where key refers to person no./id and values refers to BMI of them respectively
+    elif button == 'History':
+        sg.popup("BMi's of your people are:", db)
+        break
+
+    # if ' is chosen the GUI will be closed and code will terminated
     else:
         condition = False
 
