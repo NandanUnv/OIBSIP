@@ -75,7 +75,7 @@ elif button == 'Yes':
     for i in p:
         pas = pas + i
 
-    pyperclip.copy(pas)  # The password is copied to clipboard
+    pyperclip.copy(pas)  # The password will be copied to clipboard
 
     sg.popup(f'Your Password: {str(pas)} \nLength of your password:{len(pas)} \nThe password is copied to clipboard',
              title='Password')
