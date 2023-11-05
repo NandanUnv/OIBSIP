@@ -94,7 +94,7 @@ def otp(s3):
     server.starttls()
     server.login('bossbasket638@gmail.com',"fzephektzflufaps")
     msg = "Welcome to CHAT APP\nyour otp is:"+str(s2)
-    server.sendmail('bossbasket638@gmail.com', f'{s3}' , msg)
+    server.sendmail('bossbasket638@gmail.com', s3, msg)
     server.quit()
 
 if __name__ == "__main__":
