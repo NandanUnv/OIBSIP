@@ -1,1 +1,1 @@
-In this task you will find the code of Chat App within C.L.I, Here a socket is developed by server where client will connect the socket for communication. can also create new account after getting verified.
+In this task you will find the code of Chat App within C.L.I, Here a socket is developed by server where client will connect the socket for communication. can also create new account after getting verified with your Gmail.
