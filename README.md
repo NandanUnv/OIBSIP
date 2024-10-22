@@ -1,4 +1,4 @@
 # OIBSIP
 
 Hello everyone,
-In this repository, I will be sharing my tasks during my internship of OIBSIP(Oasis InfoByte Summer Internship Programme).
+In this repository, I will be sharing multiple tasks in a single repository.
