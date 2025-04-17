@@ -1,8 +1,5 @@
 
-'''
-     Task-2 of Oasis InfoByte:
-                "Random Password Generator USING PyQt GUI"
-                                                            '''
+
 import pyperclip
 
 import PySimpleGUIQt as sg
