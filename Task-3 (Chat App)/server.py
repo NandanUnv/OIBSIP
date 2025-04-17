@@ -1,7 +1,4 @@
-'''
-  Task-3 of Oasis InfoByte Internship:
-                           "CHAT APPLICATION"
-                                             '''
+
 
 from socket import *
 import os
