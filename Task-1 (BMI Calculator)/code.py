@@ -1,7 +1,4 @@
-'''
-     Task-1 of Oasis InfoByte:
-                "BMI CALCULATOR USING PyQt GUI"
-                                                   '''
+
 
 import PySimpleGUIQt as sg
 
